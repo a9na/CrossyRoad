@@ -81,8 +81,8 @@ public:
         {
             for (int j = 0; j < width; j++)
             {
-                if (i == 0 && (j == 0 || j == width - 1)) cout << "S";
-                if (i == numberOfLanes - 1 && (j == 0 || j == width - 1)) cout << "F";
+                if (i == 0 && (j == 0 || j == width - 1)) cout << "_";
+                if (i == numberOfLanes - 1 && (j == 0 || j == width - 1)) cout << "___";
                 if (map[i]->CheckPos(j) && i != 0 && i != numberOfLanes - 1)
                     cout << "#";
                 else if (player->x == j && player->y == i)
